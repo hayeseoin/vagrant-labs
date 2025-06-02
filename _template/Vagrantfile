@@ -1,0 +1,68 @@
+Vagrant.configure("2") do |config|
+  config.vm.box = "hayeseoin/al2023-hyperv"
+  config.vm.network "public_network", bridge: "Default Switch"
+  config.vm.synced_folder ".", "/vagrant", disabled: true
+
+  # Copy public key from WSL home to a user called ansible
+  local_ssh_key = File.expand_path("\\\\wsl.localhost\\Debian\\home\\eoinh\\.ssh\\id_rsa.pub", __dir__)
+  def create_user_shell(username)
+    <<-SHELL
+      useradd -m -s /bin/bash #{username}
+      mkdir -p /home/#{username}/.ssh
+      cp /home/vagrant/id_rsa.pub /home/#{username}/.ssh/authorized_keys
+      chown -R #{username}:#{username} /home/#{username}/.ssh
+      chmod 700 /home/#{username}/.ssh
+      chmod 600 /home/#{username}/.ssh/authorized_keys
+      echo "#{username} ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers.d/#{username}
+    SHELL
+  end
+
+  # VM 1
+  config.vm.define "01-al2023" do |node|
+    settings = { 
+      box: "hayeseoin/al2023-hyperv",
+      name: "01-al2023", 
+      hostname: "01-al2023", 
+      vmname: "01-al2023",
+      memory: 1024, 
+      cpus: 2
+    }
+    node.vm.box = settings[:box]
+    node.vm.hostname = settings[:hostname]
+    node.vm.network "public_network", bridge: "Default Switch"
+
+    node.vm.provider "hyperv" do |h|
+      h.vmname = settings[:vmname]
+      h.memory = settings[:memory]
+      h.cpus   = settings[:cpus]
+      h.enable_checkpoints = false
+    end
+    node.vm.provision "file", source: local_ssh_key, destination: "/home/vagrant/id_rsa.pub"
+    node.vm.provision "shell", inline: create_user_shell("eoinh")
+  end
+
+  # VM 2
+  config.vm.define "01-alma9" do |node|
+    settings = { 
+      box: "generic/alma9",
+      name: "01-alma9", 
+      hostname: "01-alma9", 
+      vmname: "01-alma9",
+      memory: 512, 
+      cpus: 1
+    }
+    node.vm.box = settings[:box]
+    node.vm.hostname = settings[:hostname]
+    node.vm.network "public_network", bridge: "Default Switch"
+
+    node.vm.provider "hyperv" do |h|
+      h.vmname = settings[:vmname]
+      h.memory = settings[:memory]
+      h.cpus   = settings[:cpus]
+      h.enable_checkpoints = false
+    end
+    node.vm.provision "file", source: local_ssh_key, destination: "/home/vagrant/id_rsa.pub"
+    node.vm.provision "shell", inline: create_user_shell("alma-user")
+  end
+
+end
