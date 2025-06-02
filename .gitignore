@@ -1,0 +1,45 @@
+# Vagrant artifacts
+.vagrant/
+*.box
+
+# SSH keys (never commit private keys!)
+*.pem
+*.key
+*.pub
+id_rsa
+id_rsa.pub
+id_ed25519
+id_ed25519.pub
+
+# Logs and runtime files
+*.log
+*.pid
+
+# OS/system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temp files and editors
+*.swp
+*.swo
+*.bak
+*.tmp
+*~
+.vscode/
+.idea/
+
+# Python virtual environments (if any scripting later)
+venv/
+__pycache__/
+*.pyc
+
+# Cloud-init ISO (if generated)
+seed.iso
+
+# Custom script outputs or generated metadata
+*.iso
+*.img
+*.qcow2
+*.vhdx
+output-*
