@@ -28,6 +28,6 @@ Planning templates for use with Linux and KVM/libvirt.
 ## SSH Access
 
 To simplify local SSH access, see:
-[`ssh-config/README.md`](ssh-config)
+[`docs/ssh-config.md`](docs/ssh-config.md)
 
 You may want to suppress strict host key checking for local labs.
