@@ -29,7 +29,7 @@ vagrant destroy -f
 
 ## Vagrantfile Overview
 
-## Virtual Machine Config
+### Virtual Machine Config
 
 The virtual machine is configured by the `vm_settings` array
 ```ruby
