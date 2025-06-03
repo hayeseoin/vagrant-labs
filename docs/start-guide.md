@@ -55,7 +55,7 @@ Set up [**Hyper-V Hosts Manager**](https://github.com/hayeseoin/hyper-v-hosts-ma
 > ```ps
 > Get-NetIPInterface | where {
 >  $_.InterfaceAlias -eq 'vEthernet (WSL (Hyper-V firewall))' -or
->  $_.InterfaceAlias -eq 'Default Switch'
+>  $_.InterfaceAlias -eq 'vEthernet(Default Switch)'
 >} | Set-NetIPInterface -Forwarding Enabled -Verbose
 >```
 

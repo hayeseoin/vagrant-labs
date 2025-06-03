@@ -45,16 +45,16 @@ alias psadmin='/path/to/launch-ps-admin-shell.sh'
 
 If you're using Hyper-V’s Default Switch, VMs will get dynamic IPs and won’t be accessible from WSL without a small network forwarding tweak.
 
-To enable connectivity from WSL to Hyper-V:
-
-```ps
-Get-NetIPInterface | where {
-  $_.InterfaceAlias -eq 'vEthernet (WSL (Hyper-V firewall))' -or
-  $_.InterfaceAlias -eq 'vEthernet (Default Switch)'
-} | Set-NetIPInterface -Forwarding Enabled -Verbose
-```
-
 You can automate this by setting up [Hyper-V Hosts Manager](https://github.com/hayeseoin/hyper-v-hosts-manager) to persist this and set up name resolution via the hosts file.
+
+> Optional: PowerShell one-liner to enable WSL-to-VM routing:
+>
+> ```ps
+> Get-NetIPInterface | where {
+>  $_.InterfaceAlias -eq 'vEthernet (WSL (Hyper-V firewall))' -or
+>  $_.InterfaceAlias -eq 'vEthernet(Default Switch)'
+>} | Set-NetIPInterface -Forwarding Enabled -Verbose
+>```
 
 ### 4. SSH Config for Convenience (Optional)
 
