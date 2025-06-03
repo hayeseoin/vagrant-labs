@@ -19,7 +19,7 @@ Refer to the [Virtualization Lab Setup](https://github.com/hayeseoin/virtualizat
 - [`duplicate-vms`](starter-templates/hyper-v/duplicate-vms) - For scaling with consistent configs.
 - [`single-vm`](starter-templates/hyper-v/single-vm) - Minimal config.
 
-Vagrant must be run in a Powershell admin terminal to use the Hyper-V provider. If using WSL please see this guide on using Vagrant with Hyper-V and WSL: [`docs/using-vagrant-with-hyper-v-and-wsl.md`](docs/using-vagrant-with-hyper-v-and-wsl.md)
+Vagrant must be run in a Powershell admin terminal to use the Hyper-V provider. If using WSL please see this guide on using Vagrant with Hyper-V and WSL: [`docs/using-vagrant-with-wsl-and-hyper-v.md`](docs/using-vagrant-with-wsl-and-hyper-v.md)
 
 ### [libvirt](starter-templates/libvirt)
 
