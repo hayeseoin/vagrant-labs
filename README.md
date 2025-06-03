@@ -6,4 +6,4 @@ Setup, requirements and additional tooling are documented here [Virtualization L
 
 ## Starter templates
 
-### [Hyper-V Starter Templates](starter-templates)
+### [Hyper-V Starter Templates](starter-templates/hyper-v)
