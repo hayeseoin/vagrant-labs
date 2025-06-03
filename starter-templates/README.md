@@ -2,6 +2,6 @@
 
 Starter templates for bootstrapping Vagrantfiles.
 
-## [Hyper-V Starter Templates](starter-templates/hyper-v)
+## [Hyper-V Starter Templates](hyper-v)
 
-## [libvirt Starter Templates](starter-templates/libvirt)
+## [libvirt Starter Templates](libvirt)
