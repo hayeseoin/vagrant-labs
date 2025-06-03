@@ -9,7 +9,7 @@ Enable Hyper-V
 Install Vagrant (Windows)  
 Install and set up [**Hyper-V Hosts Manager**](https://github.com/hayeseoin/hyper-v-hosts-manager)  
 If using WSL, enable for use with vagrant following [`using-vagrant-with-wsl-and-hyper-v.md`](using-vagrant-with-wsl-and-hyper-v.md)  
-Run the [**default-template**](../starter-templates/hyper-v/default-setup/) to start  
+Run the [**base-template**](../starter-templates/hyper-v/base-template/) to start  
 
 ---
 
@@ -68,6 +68,6 @@ C:\\Users\\eoaha\\dev\\wsl-ssh-key\\id_rsa.pub
 ``` 
 If using WSL, make sure the a copy of your public key is saved somewhere in the Windows filesystem.
 
-This is covered in more detail in the documentation for the default Hyper-V template: [`docs/hyper-v-default-template.md`](hyper-v-default-template.md)
+This is covered in more detail in the documentation for the default Hyper-V template: [`docs/hyper-v-baset-template.md`](hyper-v-base-template.md)
 
 You may consider reviewing [`ssh-config.md`](ssh-config.md) for how to generate a local SSH config that suppresses known-hosts warnings for local VMs.
