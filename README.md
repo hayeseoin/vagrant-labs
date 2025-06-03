@@ -1,6 +1,6 @@
 # Vagrant Labs
 
-This repository is a collection of reusable Vagrant lab templates, primarily targeting Hyper-V with future plans for libvirt support. These labs are used for prototyping, experimentation, and infrastructure learning.
+This repository is a collection of reusable Vagrant lab templates for local experimentation and infrastructure prototyping. It primarily targets Hyper-V with future support planned for libvirt/KVM environments.
 
 ## Requirements
 
@@ -18,6 +18,8 @@ Refer to the [Virtualization Lab Setup](https://github.com/hayeseoin/virtualizat
 - [`multi-vm`](starter-templates/hyper-v/multi-vm) - Basic multi-VM topology.
 - [`duplicate-vms`](starter-templates/hyper-v/duplicate-vms) - For scaling with consistent configs.
 - [`single-vm`](starter-templates/hyper-v/single-vm) - Minimal config.
+
+Vagrant must be run in a Powershell admin terminal to use the Hyper-V provider. If using WSL please see this guide on [Using Vagrant with Hyper-V and WSL](using-vagrant-with-hyper-v-and-wsl)
 
 ### [libvirt](starter-templates/libvirt)
 

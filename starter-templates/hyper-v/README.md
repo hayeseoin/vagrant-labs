@@ -4,8 +4,6 @@ The default starter template can be found [here](starter-templates/hyper-v/defau
 
 Vagrant must be run in a Powershell admin terminal to use the Hyper-V provider. If using WSL please see this guide on [Using Vagrant with Hyper-V and WSL](using-vagrant-with-hyper-v-and-wsl)
 
-These are templates for deploying Hyper-V VMs with Vagrant. There are global config settings, and per VM config settings. These templates use the Defautl Switch, disable SMB sharing, disables checkpoints and injects an SSH key and user at provisioning time. If the switch and SMB config are not declared in the condig, you will be prompted for them during `vagrant up`.
-
 This can be used with [Hyper-V Hosts Manager](https://github.com/hayeseoin/hyper-v-hosts-manager) if you want VMs to be accessible via hostname instead of IP alone. 
 
 ## Global Config
