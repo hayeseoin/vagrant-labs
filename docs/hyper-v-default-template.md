@@ -1,7 +1,8 @@
 # Hyper-V Default Template
 
 This guide explains how to deploy the default Hyper-V Vagrant template and describes its configuration.
-Path: [`starter-templates/hyper-v/default-setup`](../starter-templates/hyper-v/default-setup/)
+
+Path: [`starter-templates/hyper-v/default-setup/Vagrantfile`](../starter-templates/hyper-v/default-setup/Vagrantfile)
 
 ## Quick Start
 
