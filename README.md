@@ -17,4 +17,12 @@ See [`docs/hyper-v-base-template.md`](docs/hyper-v-base-template.md) for how to 
 
 ## Labs
 
-Coming soon 
+Coming soon...
+
+### Related Resources
+
+#### [Hyper-V Hosts Manager](https://github.com/hayeseoin/hyper-v-hosts-manager)  
+Automatically syncs Hyper-V VM IPs into the Windows hosts file and enables WSL-to-VM networking.
+
+#### [al2023-on-hyper-v](https://github.com/hayeseoin/al2023-on-hyper-v)  
+Archived setup guide and templates for running Amazon Linux 2023 under Hyper-V and with Vagrant.
