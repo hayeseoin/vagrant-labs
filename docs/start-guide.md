@@ -60,7 +60,7 @@ Set up [**Hyper-V Hosts Manager**](https://github.com/hayeseoin/hyper-v-hosts-ma
 >```
 
 ### 6. SSH Config (Optional)
-The templates in this repo inject an SSH key from the Powershell environment into the VMs. Set up an environment variable in Powershell which points to the location of your public key. [Power Toys Environment Variables](https://learn.microsoft.com/en-us/windows/powertoys/environment-variables) is helpful for this.
+The templates in this repo inject an SSH key from the Powershell environment into the VMs. Set up the environment variable `VAGRANT_PROVISIONED_SSH_KEY` in Powershell which points to the location of your public key. [Power Toys Environment Variables](https://learn.microsoft.com/en-us/windows/powertoys/environment-variables) is helpful for this.
 
 ```ps
 > $env:VAGRANT_PROVISIONED_SSH_KEY
