@@ -68,6 +68,6 @@ C:\\Users\\eoaha\\dev\\wsl-ssh-key\\id_rsa.pub
 ``` 
 If using WSL, make sure the a copy of your public key is saved somewhere in the Windows filesystem.
 
-This is covered in more detail in the documentation for the default Hyper-V template [docs/hyper-v-default-template.md](hyper-v-default-template.md)
+This is covered in more detail in the documentation for the default Hyper-V template: [`docs/hyper-v-default-template.md`](hyper-v-default-template.md)
 
 You may consider reviewing [`ssh-config.md`](ssh-config.md) for how to generate a local SSH config that suppresses known-hosts warnings for local VMs.
