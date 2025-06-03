@@ -9,19 +9,12 @@ Designed for:
 
 ## Getting Started
 
-See [docs/start-guide.md](docs/start-guide.md) for setup instructions.
+### Environment setup
+See [`docs/start-guide.md`](docs/start-guide.md) for instructions on how to set up the environment.
 
-## Starter templates
+### Launching and editing templates
+See [`docs/hyper-v-default-template.md`](docs/hyper-v-default-template.md) for how to deploy Vagrant templates and understand the Vagrantfile structure used in this repo.
 
-### [Hyper-V ](starter-templates/hyper-v)
+## Labs
 
-- [`default-setup`](starter-templates/hyper-v/default-setup) - Single VM with SSH key injection.
-- [`multi-vm`](starter-templates/hyper-v/multi-vm) - Basic multi-VM topology.
-- [`duplicate-vms`](starter-templates/hyper-v/duplicate-vms) - For scaling with consistent configs.
-- [`single-vm`](starter-templates/hyper-v/single-vm) - Minimal config.
-
-Vagrant must be run in a Powershell admin terminal to use the Hyper-V provider. If using WSL please see this guide on using Vagrant with Hyper-V and WSL: [`docs/using-vagrant-with-wsl-and-hyper-v.md`](docs/using-vagrant-with-wsl-and-hyper-v.md)
-
-### [libvirt](starter-templates/libvirt)
-
-Planning templates for use with Linux and KVM/libvirt.
+Coming soon 
