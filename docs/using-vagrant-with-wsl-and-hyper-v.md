@@ -50,7 +50,7 @@ To enable connectivity from WSL to Hyper-V:
 ```ps
 Get-NetIPInterface | where {
   $_.InterfaceAlias -eq 'vEthernet (WSL (Hyper-V firewall))' -or
-  $_.InterfaceAlias -eq 'Default Switch'
+  $_.InterfaceAlias -eq 'vEthernet (Default Switch)'
 } | Set-NetIPInterface -Forwarding Enabled -Verbose
 ```
 
