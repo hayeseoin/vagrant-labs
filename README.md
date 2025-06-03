@@ -8,7 +8,7 @@ This repository is a collection of reusable Vagrant lab templates for local expe
 - Vagrant (>= 2.3.x)
 - (Optional) WSL2 for shell scripting or cloud-init generation
 
-Refer to the [Virtualization Lab Setup](https://github.com/hayeseoin/virtualization-lab-setup/tree/main/setup) for complete tooling configuration and environment preparation.
+Refer to the [Virtualization Lab Setup](https://github.com/hayeseoin/virtualization-lab-setup) for complete tooling configuration and environment preparation.
 
 ## Starter templates
 
