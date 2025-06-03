@@ -6,7 +6,7 @@ Vagrant.configure("2") do |config|
   vm_settings = [ 
     {   
       name: "al2023-node1",
-      user_name: "eoinh",
+      user_name: "ec2-user",
       box: "hayeseoin/al2023-hyperv",
       memory: 512, 
       cpus: 1 

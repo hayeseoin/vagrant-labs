@@ -1,14 +1,15 @@
 # Vagrant Labs
 
-This repository is a collection of reusable Vagrant lab templates for local experimentation and infrastructure prototyping. It primarily targets Hyper-V with future support planned for libvirt/KVM environments.
+Reusable lab environment templates for exploring infrastructure tooling.
 
-## Requirements
+Designed for:
+- Windows 10/11 with WSL2
+- Vagrant with Hyper-V or Libvirt
+- Optional tools for enhanced usability
 
-- Windows 10/11 with Hyper-V enabled
-- Vagrant (>= 2.3.x)
-- (Optional) WSL2 for shell scripting or cloud-init generation
+## Getting Started
 
-Refer to the [Virtualization Lab Setup](https://github.com/hayeseoin/virtualization-lab-setup) for complete tooling configuration and environment preparation.
+See [docs/start-guide.md](docs/start-guide.md) for setup instructions.
 
 ## Starter templates
 
@@ -24,10 +25,3 @@ Vagrant must be run in a Powershell admin terminal to use the Hyper-V provider. 
 ### [libvirt](starter-templates/libvirt)
 
 Planning templates for use with Linux and KVM/libvirt.
-
-## SSH Access
-
-To simplify local SSH access, see:
-[`docs/ssh-config.md`](docs/ssh-config.md)
-
-You may want to suppress strict host key checking for local labs.
