@@ -60,6 +60,14 @@ Set up [**Hyper-V Hosts Manager**](https://github.com/hayeseoin/hyper-v-hosts-ma
 >```
 
 ### 6. SSH Config (Optional)
-Set up a global SSH config that lets you cleanly connect to Vagrant VMs without triggering known-hosts issues:
+The templates in this repo inject an SSH key from the Powershell environment into the VMs. Set up an environment variable in Powershell which points to the location of your public key. [Power Toys Environment Variables](https://learn.microsoft.com/en-us/windows/powertoys/environment-variables) is helpful for this.
 
-See: [`ssh-config.md`](ssh-config.md)
+```ps
+> $env:VAGRANT_PROVISIONED_SSH_KEY
+C:\\Users\\eoaha\\dev\\wsl-ssh-key\\id_rsa.pub
+``` 
+If using WSL, make sure the a copy of your public key is saved somewhere in the Windows filesystem.
+
+This is covered in more detail in the templates documentation.
+
+You may consider reviewing [`ssh-config.md`](ssh-config.md) for how to generate a local SSH config that suppresses known-hosts warnings for local VMs.

@@ -56,6 +56,6 @@ You can automate this by setting up [Hyper-V Hosts Manager](https://github.com/h
 >} | Set-NetIPInterface -Forwarding Enabled -Verbose
 >```
 
-### 4. SSH Config for Convenience (Optional)
+### 4. SSH config (optional)
 
-See [`ssh-config.md`](ssh-config.md) for how to generate a local SSH config that suppresses known-hosts warnings.
+You may consider reviewing [`ssh-config.md`](ssh-config.md) for how to generate a local SSH config that suppresses known-hosts warnings for local VMs.
