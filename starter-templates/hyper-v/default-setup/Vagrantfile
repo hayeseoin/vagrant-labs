@@ -5,11 +5,11 @@ Vagrant.configure("2") do |config|
   # Setup file for the VMs
   vm_settings = [ 
     {   
-        name: "al2023-node1",
-        user_name: "eoinh",
-        box: "hayeseoin/al2023-hyperv",
-        memory: 512, 
-        cpus: 1 
+      name: "al2023-node1",
+      user_name: "eoinh",
+      box: "hayeseoin/al2023-hyperv",
+      memory: 512, 
+      cpus: 1 
     }
   ]
 
@@ -28,6 +28,7 @@ Vagrant.configure("2") do |config|
     SHELL
   end
   
+  # VM config block - consumes vm_settings from above
   vm_settings.each do |vm|
     config.vm.define vm[:name] do |node|
       node.vm.box = vm[:box]
