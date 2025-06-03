@@ -13,7 +13,7 @@ Designed for:
 See [`docs/start-guide.md`](docs/start-guide.md) for instructions on how to set up the environment.
 
 ### Launching and editing templates
-See [`docs/hyper-v-default-template.md`](docs/hyper-v-default-template.md) for how to deploy Vagrant templates and understand the Vagrantfile structure used in this repo.
+See [`docs/hyper-v-default-template.md`](docs/hyper-v-default-template.md) for how to deploy Vagrant templates and understand the Vagrantfile structure used in this repo. More templates can be found in [`starter-templates`](starter-templates)
 
 ## Labs
 
