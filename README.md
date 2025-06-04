@@ -17,7 +17,7 @@ See [`docs/hyper-v-base-template.md`](docs/hyper-v-base-template.md) for how to 
 
 ## Labs
 
-Coming soon...
+- [**`ansible-vagrant-hyper-v`**](ansible-vagrant-hyper-v) - Provisioning a VM with a custom ansible provisioning function.
 
 ## Related Resources
 
