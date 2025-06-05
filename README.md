@@ -19,7 +19,7 @@ See [`docs/ansible-with-hyper-v.md`](docs/ansible-with-hyper-v.md) for steps on 
 
 ## Labs
 
-- [**`ansible-vagrant-hyper-v`**](ansible-vagrant-hyper-v) - Provisioning a VM with a custom ansible provisioning function.
+[**`ansible-vagrant-hyper-v`**](ansible-vagrant-hyper-v) - Provisioning a VM with a custom ansible provisioning function.
 
 ## Related Resources
 
