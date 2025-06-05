@@ -13,7 +13,9 @@ Designed for:
 See [`docs/start-guide.md`](docs/start-guide.md) for instructions on how to set up the environment.
 
 ### Launching and editing templates
-See [`docs/hyper-v-base-template.md`](docs/hyper-v-base-template.md) for how to deploy Vagrant templates and understand the Vagrantfile structure used in this repo. More templates can be found in [`starter-templates`](starter-templates)
+See [`docs/hyper-v-base-template.md`](docs/hyper-v-base-template.md) for how to deploy Vagrant templates and understand the Vagrantfile structure used in this repo.
+
+See [`docs/ansible-with-hyper-v.md`](docs/ansible-with-hyper-v.md) for steps on Ansible provisioning with Hyper-V.
 
 ## Labs
 
