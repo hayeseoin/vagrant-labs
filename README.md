@@ -1,10 +1,10 @@
 # Vagrant Labs
 
-Reusable lab environment templates for exploring infrastructure tooling.
+Library of composable, reusable Vagrant templates and provisioning scaffolds, and a framwork for using Vagrant with WSL and Hyper-V. 
 
 Designed for:
 - Windows 10/11 with WSL2
-- Vagrant with Hyper-V or Libvirt
+- Vagrant with Hyper-V or Libvirt (Libvirt in development)
 - Optional tools for enhanced usability
 
 ## Getting Started
@@ -19,7 +19,11 @@ See [`docs/ansible-with-hyper-v.md`](docs/ansible-with-hyper-v.md) for steps on 
 
 ## Labs
 
+[**`hyper-v-base-template`**}](hyper-v-base-template) - Base template for deploying a Hyper-V VM. 
+
 [**`ansible-vagrant-hyper-v`**](ansible-vagrant-hyper-v) - Provisioning a VM with a custom ansible provisioning function.
+
+[**`box-factory`**](box-factroy) - Template for forking boxes from vagrant Cloud Catalog.
 
 ## Related Resources
 
