@@ -19,11 +19,14 @@ See [`docs/ansible-with-hyper-v.md`](docs/ansible-with-hyper-v.md) for steps on 
 
 ## Labs
 
-[**`hyper-v-base-template`**}](hyper-v-base-template) - Base template for deploying a Hyper-V VM. 
+[**`hyper-v-base-template`**](hyper-v-base-template) | [`Vagrantfile`](https://raw.githubusercontent.com/hayeseoin/vagrant-labs/refs/heads/main/hyper-v-base-template/Vagrantfile)  
+Base template for deploying a Hyper-V VM.  
 
-[**`ansible-vagrant-hyper-v`**](ansible-vagrant-hyper-v) - Provisioning a VM with a custom ansible provisioning function.
+[**`ansible-vagrant-hyper-v`**](ansible-vagrant-hyper-v) | [`Vagrantfile`](https://raw.githubusercontent.com/hayeseoin/vagrant-labs/refs/heads/main/ansible-vagrant-hyper-v/Vagrantfile)  
+Provisioning a VM with a custom ansible provisioning function.
 
-[**`box-factory`**](box-factroy) - Template for forking boxes from vagrant Cloud Catalog.
+[**`box-factory`**](box-factory) | [`Vagrantfile`](https://raw.githubusercontent.com/hayeseoin/vagrant-labs/refs/heads/main/box-factory/Vagrantfile)  
+Template for forking boxes from vagrant Cloud Catalog.
 
 ## Related Resources
 
