@@ -28,3 +28,6 @@ Automatically syncs Hyper-V VM IPs into the Windows hosts file and enables WSL-t
 
 ### [al2023-on-hyper-v](https://github.com/hayeseoin/al2023-on-hyper-v)  
 Archived setup guide and templates for running Amazon Linux 2023 under Hyper-V and with Vagrant.
+
+### [Image Templates](https://github.com/hayeseoin/homelab-resources-images)
+Repo of image templates containing personalized Vagrant boxes.

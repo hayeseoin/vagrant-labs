@@ -1,0 +1,14 @@
+---
+- name: Install docker
+  dnf:
+    name: docker
+    state: present
+  notify: start docker
+
+- name: Add shell user to docker docker group
+  user:
+    name: "{{ docker_shell_user}}"
+    group: "{{ docker_group }}"
+
+- name: Reset ssh connection to apply user changes.
+  meta: reset_connection

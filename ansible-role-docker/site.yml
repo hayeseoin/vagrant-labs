@@ -1,0 +1,7 @@
+---
+- name: Set up stack
+  hosts: all
+  become: true
+  roles:
+    - role: docker
+    # - role: docker-test
